@@ -1,0 +1,43 @@
+<nav class="c-nav sticky top-0 z-50 backdrop-blur-xl">
+  <div class="max-w-3xl mx-auto px-5 h-14 flex items-center justify-between gap-4">
+    <!-- logo -->
+    <a routerLink="/" class="flex items-center gap-2.5 shrink-0">
+      <div class="w-7 h-7 bg-[#E8334A] flex items-center justify-center shrink-0">
+        <span class="mono text-white font-bold text-[11px]">SB</span>
+      </div>
+
+      <span class="font-semibold text-sm c-ink"> Subhrangsu Bera </span>
+    </a>
+
+    <!-- navigation -->
+    <div class="flex items-center gap-1 font-mono">
+      <a
+        routerLink="/"
+        class="c-nav-link mono text-[11px] tracking-wide px-3 py-1.5 hidden sm:block"
+      >
+        Home
+      </a>
+
+      <a
+        routerLink="/blog"
+        class="c-nav-link mono text-[11px] tracking-wide px-3 py-1.5 hidden sm:block"
+      >
+        Blog
+      </a>
+
+      <a
+        routerLink="/portfolio#contact"
+        class="mono text-[11px] tracking-wide text-white bg-[#E8334A] hover:bg-[#c42638] transition-colors px-4 py-1.5 ml-2"
+      >
+        Hire Me
+      </a>
+
+      <!-- theme toggle -->
+      <button (click)="toggleTheme()" class="toggle-pill ml-3">
+        <div class="toggle-knob">
+          <span>{{ theme === 'dark' ? '🌙' : '☀️' }}</span>
+        </div>
+      </button>
+    </div>
+  </div>
+</nav>
