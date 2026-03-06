@@ -3,8 +3,12 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./",
     "paths": {
-      "design-system": ["./dist/design-system"]
+      "design-system": [
+        "projects/shared/design-system/src/public-api",
+        // "./dist/design-system"
+      ]
     },
     "strict": true,
     "noImplicitOverride": true,
@@ -46,10 +50,10 @@
       "path": "./projects/blog/tsconfig.spec.json"
     },
     {
-      "path": "./projects/design-system/tsconfig.lib.json"
+      "path": "./projects/shared/design-system/tsconfig.lib.json"
     },
     {
-      "path": "./projects/design-system/tsconfig.spec.json"
+      "path": "./projects/shared/design-system/tsconfig.spec.json"
     }
   ]
 }

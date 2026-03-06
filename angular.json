@@ -108,7 +108,7 @@
           },
           "defaultConfiguration": "development",
           "options": {
-            "port": 4200
+            "port": 4300
           }
         }
       }
@@ -218,7 +218,7 @@
           },
           "defaultConfiguration": "development",
           "options": {
-            "port": 4201
+            "port": 4301
           }
         }
       }
@@ -328,25 +328,25 @@
           },
           "defaultConfiguration": "development",
           "options": {
-            "port": 4202
+            "port": 4302
           }
         }
       }
     },
     "design-system": {
       "projectType": "library",
-      "root": "projects/design-system",
-      "sourceRoot": "projects/design-system/src",
+      "root": "projects/shared/design-system",
+      "sourceRoot": "projects/shared/design-system/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular/build:ng-packagr",
           "configurations": {
             "production": {
-              "tsConfig": "projects/design-system/tsconfig.lib.prod.json"
+              "tsConfig": "projects/shared/design-system/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/design-system/tsconfig.lib.json"
+              "tsConfig": "projects/shared/design-system/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -354,7 +354,7 @@
         "test": {
           "builder": "@angular/build:karma",
           "options": {
-            "tsConfig": "projects/design-system/tsconfig.spec.json"
+            "tsConfig": "projects/shared/design-system/tsconfig.spec.json"
           }
         }
       }
