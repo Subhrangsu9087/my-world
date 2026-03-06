@@ -1,2 +1,1 @@
-/* You can add global styles to this file, and also import other style files */
-@import '../../../projects/design-system/src/lib/styles/design-system.css';
+@import "../../shared/design-system/src/styles.css";
