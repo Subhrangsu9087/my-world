@@ -41,7 +41,7 @@
       <!-- theme toggle -->
       <button (click)="toggleTheme()" class="toggle-pill ml-3">
         <div class="toggle-knob">
-          <span>{{ theme === 'dark' ? '🌙' : '☀️' }}</span>
+          <span>{{ theme() === 'dark' ? '🌙' : '☀️' }}</span>
         </div>
       </button>
     </div>
