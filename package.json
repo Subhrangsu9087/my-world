@@ -6,8 +6,8 @@
     "shell": "nx serve shell --configuration development --port 4200 -o",
     "portfolio": "nx serve portfolio --configuration development --port 4201 -o",
     "blog": "nx serve blog --configuration development --port 4202 -o",
-    "start": "concurrently \"ng build design-system\" \"ng run portfolio:serve\" \"ng run shell:serve\" \"ng run blog:serve\"",
-    "build": "nx run shell:build && nx run portfolio:build && nx run blog:build",
+    "start": "nx run-many --target=serve --projects=shell,portfolio,blog --parallel=3",
+    "build": "nx run-many --target=build --projects=shell,portfolio,blog --parallel=3",
     "watch": "nx build --watch --configuration development",
     "test": "nx test",
     "lint": "nx lint"

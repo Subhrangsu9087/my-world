@@ -33,7 +33,9 @@
   },
   "defaultBase": "master",
   "namedInputs": {
-    "sharedGlobals": [],
+    "sharedGlobals": [
+      "{workspaceRoot}/.github/workflows/my-world.yml"
+    ],
     "default": [
       "{projectRoot}/**/*",
       "sharedGlobals"
